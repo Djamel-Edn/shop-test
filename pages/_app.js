@@ -11,7 +11,6 @@ export default function App({ Component, pageProps }) {
   <div className={roboto.className}>
         <CartContextProvider>
       <Layout>
-
     <Component {...pageProps} />
       </Layout>
         </CartContextProvider>
