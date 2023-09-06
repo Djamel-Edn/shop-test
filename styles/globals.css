@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 0.2fr;
+
+  }
+  @media (min-width: 551px) {
+    .grid-container {
+      grid-template-columns: 2fr 1fr 1fr 1fr 0.2fr;
+    }
+  }
+  /* Medium screen styles */
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: 2fr 1fr 1fr 0.8fr 0.2fr;
+    }
+  }
+ 
+  @media (min-width: 320px) and (max-width:425px) {
+    .product {
+      grid-template-columns: 40% 1fr 1fr 1fr 0.2fr;
+    }
+    .info{
+        width:100%
+    }
+    .tableau{
+        font-size:10px;
+    }
+    .header{
+        font-size:11px;
+    }
+    
+  }
+
+
+  input{
+    @apply border-2 border-gray-200 rounded-sm px-3 py-2 text-gray-900 w-4/6 h-8 ;
+  }
+  input:focus{
+    @apply border-blue-900
+  }

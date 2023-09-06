@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input{
+  @apply border-2 border-gray-200 rounded-sm px-3 py-2 text-gray-900 w-4/6 h-8 ;
+}
+input:focus{
+  @apply border-blue-900
+}
+select{
+  @apply border-2 border-gray-200 rounded-md px-2 py-2 text-gray-900 w-1/5 ml-2;
+}
+textarea {
+  @apply  rounded-md text-black w-4/6 p-2 h-28;
+  resize:both;
+}
+table.basic{
+  @apply w-10/12 text-white text-xl bg-slate-500 rounded-sm shadow-md;
+}
+table.basic thead tr td {
+  @apply   text-xl border-b border-gray-300 px-2;
+}
+
+table.basic a{
+  @apply bg-fuchsia-600 rounded-md inline-flex w-20 justify-center items-center ml-10;
+} 
+.delete-image{
+  @apply absolute top-0 p-2 opacity-90 rounded-md text-xl h-1/2 w-36 flex items-center justify-center;
+}
+.delete-image:hover{
+  @apply bg-gray-300 opacity-80  text-gray-900 ease-in-out duration-200 ;
+}
+.error-message{
+  @apply  text-red-500 mt-0.5 underline;   
+}
+
+table.basic2{
+  @apply w-36 text-white text-xl;
+}
+table.basic2 thead tr td {
+  @apply bg-blue-200 text-black text-xl;
+}
+table.basic2 tr td{
+@apply border-2 border-lime-600 p-1 ;
+}
+.btn-primary{
+  @apply flex justify-center bg-slate-800 rounded-md p-1 px-3 opacity-70
+}
+.btn-primary:hover{
+  @apply opacity-100
+}
+.btn-edit{
+@apply bg-fuchsia-600 rounded-md inline-flex w-20 justify-center items-center opacity-80
+}
+
+.btn-edit:hover{
+@apply opacity-100
+}
+
+.table-body{
+  overflow-y: auto
+}
