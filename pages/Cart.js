@@ -244,7 +244,7 @@ function check(){
             
               {showPaymentModal && (
   <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-    <div className="bg-white p-4 rounded-lg w-1/4 h-64 flex flex-col" ref={modalRef}>
+    <div className="bg-white p-4 rounded-lg w-1/4 h-88 flex flex-col" ref={modalRef}>
       <div className='flex justify-between w-full'>
         <h2 className="text-lg font-semibold mb-4">Choose Payment method</h2>
         <button onClick={close}>
@@ -257,7 +257,7 @@ function check(){
         <div className='flex flex-col items-center h-full'>
           <h2>Hand to hand</h2>
           <button
-  className="btn-primary mb-2 w-full h-full"
+  className="btn-primary mb-2 w-1/2 h-full"
   type="button"
   onClick={(e) => {
     e.stopPropagation(); 
