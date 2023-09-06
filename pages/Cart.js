@@ -254,7 +254,7 @@ function check(){
         </button>
       </div>
       <div className="flex w-full gap-2 flex-grow">
-        <div className='flex flex-col items-center h-full'>
+        <div className='flex flex-col items-center h-full w-full'>
           <h2>Hand to hand</h2>
           <button
   className="btn-primary mb-2 w-1/2 h-full"
