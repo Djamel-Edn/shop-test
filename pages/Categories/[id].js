@@ -35,13 +35,13 @@ export default function SubcategoryPage({ SubCategory, hasParent, allProducts,Ca
     }
 }
   return (
-    <div className="w-full flex flex-col items-center h-screen  ">
-      <div className='w-4/5 flex flex-col mb-10 '>
+    <div className="w-full flex flex-col items-center min-h-screen  ">
+      <div className='w-4/5 flex flex-col  mb-10 '>
         {list && (
           <h2 className="text-2xl mb-5 mt-2">{SubCategory.name}</h2>
         )}
         {products.length > 0 && (
-          <div className='lg:ml-2 xl:ml-0  gap-4 text-white  w-full  flex justify-center  flex-wrap '>
+          <div className='lg:ml-2 xl:ml-0  gap-4 text-white  w-full  flex justify-center   flex-wrap '>
           {products.map(product => (
               <Link key={product._id}  href={'/Products/'+product._id}>
               <div className='border border-gray-200 hover:border-yellow-900 flex flex-col text-lg gap-2 items-center bg-yellow-700 rounded-3xl  w-56 h-80 relative' key={product._id}>

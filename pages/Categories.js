@@ -9,7 +9,7 @@ export default function CategoriesPage({MainCategories,hasParent}) {
         {MainCategories?.length>0 && MainCategories.map(MainCategory=>{
                 return(
 
-                    <div className='w-4/5 h-56 p-2' key={MainCategory._id}>
+                    <div className='w-4/5 p-2' key={MainCategory._id}>
                       <h2 className='text-2xl'>  {MainCategory.name}</h2>
                         <div className='flex flex-wrap gap-2 p-2'>
                             {hasParent?.length>0 && hasParent.map(subcategory=>{
@@ -18,7 +18,7 @@ export default function CategoriesPage({MainCategories,hasParent}) {
                                     <Link href={'/Categories/'+subcategory._id} key={subcategory._id}>
                                     <div className='bg-slate-400 w-48 h-40 rounded-md flex flex-col item-center  ' key={subcategory}>
                                         <h2 className='text-center text-lg'>{subcategory.name}</h2>
-                                    <img src={subcategory?.imageUrl} className='h-32 mt-1 w-full'alt=''/>
+                                    <img src={subcategory?.imageUrl} className='h-32 mt-1 w-full'alt='category image'/>
                                     </div>
                                     </Link>
                                 )}
