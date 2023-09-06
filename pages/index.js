@@ -2,7 +2,7 @@ import Featured from './../components/Featured';
 import { mongooseConnect } from '@/lib/mongoose';
 import { Product } from '@/models/Product';
 import PopularproductsCompo from '@/components/PopularproductsCompo';
-import { getProducts } from './../utils/products';
+import { getProducts } from '../utils/products';
 import Link from 'next/link';
 import { useState } from 'react';
 

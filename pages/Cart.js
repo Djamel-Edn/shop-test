@@ -270,23 +270,7 @@ function check(){
 </button>
 
         </div>
-        <div className=' flex flex-col h-full'>
-          <h2>E-payment</h2>
-          <button
-  className="btn-primary w-full h-full"
-  type="button"
-  onClick={(e) => {
-
-    e.stopPropagation(); // Empêcher la propagation de l'événement
-    setShowPaymentModal(false);
-    submitForm(e,'E-payment'); // Appeler submitForm ici
-    handlepay()
-  }}
->
-  <img src='' alt="E-payment" />
-</button>
-
-        </div>
+        
       </div>
     </div>
   </div>

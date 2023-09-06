@@ -5,7 +5,7 @@ const VotreRoute = () => {
   const router = useRouter();
 
   useEffect(() => {
-      router.replace('../../admin/pages/index ');
+      router.replace('https://shop-test-admin.vercel.app');
   }, []);
 
   return 
